@@ -1,0 +1,10 @@
+package com.example.data.remote.requests
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class LoginBody(
+    val username: String,
+    val password: String,
+    val grant_type: String
+)
